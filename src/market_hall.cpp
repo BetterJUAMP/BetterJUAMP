@@ -6,6 +6,8 @@
 #define MARKET_HALL_JABLKO_PUNKTY 5
 #define MARKET_HALL_GRUSZKA_CENA 2.00
 #define MARKET_HALL_GRUSZKA_PUNKTY 5
+#define MARKET_HALL_CIASTKA_CENA 5.00
+#define MARKET_HALL_CIASTKA_PUNKTY 10
 #define MARKET_HALL_BANAN_CENA 2.00
 #define MARKET_HALL_BANAN_PUNKTY 7
 #define MARKET_HALL_WODA_CENA 1.50
@@ -13,7 +15,7 @@
 
 void handle_market_hall() {
     while (true) {
-        int random_item = get_random_number() % 5 + 1;
+        int random_item = get_random_number() % 6 + 1;
         string item_name;
         double item_price;
         int item_points;
@@ -34,6 +36,10 @@ void handle_market_hall() {
             item_name = "Banan";
             item_price = MARKET_HALL_BANAN_CENA;
             item_points = MARKET_HALL_BANAN_PUNKTY;
+        } else if (random_item == 5) {
+            item_name = "Ciastka";
+            item_price = MARKET_HALL_CIASTKA_CENA;
+            item_points = MARKET_HALL_CIASTKA_PUNKTY;
         } else {
             item_name = "Woda";
             item_price = MARKET_HALL_WODA_CENA;
