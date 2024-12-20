@@ -39,15 +39,9 @@ int get_random_number() {
 }
 
 void set_console_color(int foreground, int background) {
-#ifdef _WIN32
-    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, (background << 4) | foreground);
-#endif
-#ifdef __linux__
     string fg = std::to_string(foreground);
     string bg = std::to_string(background);
     std::cout << "\033[" << fg << ";" << bg << "m";
-#endif
     current_background = background;
     current_foreground = foreground;
 }
