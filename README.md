@@ -1,9 +1,3 @@
-# JUAMP - the living simulator
+# BetterJUAMP - fork of JUAMP, that makes this game better!
 
-Latest Gorciu's project that simulates the life in colored console window.
-
-**Features:**
-- talking with family
-- market hall
-- money system
-- hunger system
+Tired of boring JUAMP? I want to make this game fresh and really cool! JUAMP has potential and I started developing programs a while ago, when I saw this repository, so I decided to make it better.
