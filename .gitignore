@@ -1,6 +1,5 @@
-*.exe
 *.o
-*.dll
-*.bin
+# target file
+juamp
 
 .vscode
