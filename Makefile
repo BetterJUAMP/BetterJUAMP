@@ -1,17 +1,11 @@
 .PHONY: all run clean
 
-ifeq ($(OS), Windows_NT)
-    CXX = g++ -static
-    EXE_SUFFIX = .exe
-else
-    CXX = g++
-    EXE_SUFFIX = .bin
-endif
+CXX = g++
 
 SRC_DIR = src
 SRC_FILES = $(wildcard $(SRC_DIR)/*.cpp)
 OBJ_FILES = $(SRC_FILES:.cpp=.o)
-TARGET = juamp$(EXE_SUFFIX)
+TARGET = juamp
 
 all: $(TARGET)
 
