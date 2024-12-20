@@ -1,15 +1,9 @@
 #pragma once
 
-#ifdef __linux__
 #include <unistd.h>
 #include <termios.h>
 #include <fcntl.h>
 #define Sleep(ms) sleep((ms) / 1000)
-#endif
-#ifdef _WIN32
-#include <windows.h>
-#include <winuser.h>
-#endif
 
 #include <iostream>
 
